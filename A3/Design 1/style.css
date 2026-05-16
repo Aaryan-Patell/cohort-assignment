@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+    background-color: #0d0d15;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    padding-left: 40px;
+    margin: 0;
+}
+
+h2 {
+    color: #ff77ff;
+    margin-bottom: 30px;
+}
+
+
+.art-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    /* Space between cards */
+    max-width: 1200px;
+}
+
+
+.card {
+    background-color: #1e1e2e;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+
+.card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding: 0 5px;
+}
+
+
+.bid-btn {
+    width: 100%;
+    background: transparent;
+    color: #aaa;
+    border: 1px solid #444;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bid-btn:hover {
+    border-color: #ff77ff;
+    color: white;
+}
