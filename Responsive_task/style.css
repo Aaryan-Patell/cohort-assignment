@@ -1,0 +1,655 @@
+@font-face {
+  font-family: roboto;
+  src: url(./RobotoMono-Medium.ttf);
+}
+@font-face {
+  font-family: reckless;
+  src: url(./RecklessCondensedS-TRIAL-Book.woff);
+}
+@font-face {
+  font-family: figtree;
+  src: url(./figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.pg-1 {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(https://www.twoleavestea.com/cdn/shop/files/AlpineBerry_mobile.webp?v=1774284087&width=511);
+  background-position: center;
+  background-size: cover;
+}
+
+.pg-1 h4 {
+  background-color: #2a2857;
+  font-size: 0.75rem;
+  font-family: roboto;
+  text-align: center;
+  letter-spacing: 0.03125rem;
+  text-transform: uppercase;
+  padding: 0.75rem 0.5rem;
+  color: #fff;
+}
+
+.pg-1 .hero {
+  min-height: calc(100vh - 35px); /* Let it fill the viewport responsively */
+  width: 100%; /* Changed from 100vw */
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem; /* Clean gap distribution between nav and content */
+}
+
+.pg-1 nav {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1rem;
+  padding: 0.75rem 1rem; /* Replaced hard vh height with padding for stability */
+  border: 0.1rem solid #000;
+}
+
+.pg-1 nav i {
+  font-size: 2rem;
+  opacity: 0.7;
+}
+.pg-1 .cart-icon {
+  display: flex;
+  gap: 2rem;
+}
+.pg-1 .left {
+  display: none;
+}
+.pg-1 .cart-icon .right {
+  display: none;
+  gap: 2rem;
+  align-items: center;
+  font-family: reckless;
+  font-size: 1.2rem;
+}
+
+.pg-1 .hero .content {
+  font-family: reckless;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.pg-1 .hero .content h1 {
+  line-height: 1.2;
+  font-size: clamp(2.2rem, 8vw, 3.3rem);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.pg-1 .hero .content p {
+  font-family: figtree;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+.pg-1 .hero .content button {
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: #2a2857;
+  color: #fff;
+  font-size: 1.1rem;
+  border: 0.1rem solid #000;
+  border-radius: 4rem;
+  font-family: figtree;
+  cursor: pointer;
+}
+
+.pg-2 {
+  width: 100%;
+  padding: 1rem;
+}
+.pg-2 .hed {
+  height: 50vh;
+  margin-top: 30%;
+}
+.pg-2 .hed h1 {
+  font-family: Reckless;
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 500;
+  text-align: center;
+}
+.pg-2 .hed button {
+  background-color: #d7a9f3;
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid #201c1a;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  transform: rotate(-2.0003deg);
+  letter-spacing: -0.14rem;
+  margin-top: 10vh;
+}
+.pg-2 .cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  overflow: scroll;
+}
+
+.pg-2 .product {
+  height: 60vh;
+  width: 20rem;
+
+  position: relative;
+  border: 0.1rem solid #000;
+}
+.pg-2 .top {
+  width: 90%;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pg-2 .card .product:nth-child(2) {
+  background-color: #c0ed91;
+}
+.pg-2 .card .product:nth-child(1) {
+  background-color: #f8d07b;
+}
+.pg-2 .cards button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #000;
+}
+.pg-2 .top h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.pg-2 img {
+  height: 60vh;
+  width: 20rem;
+}
+.pg-2 .desc {
+  width: 20rem;
+}
+.pg-2 .desc h2 {
+  padding: 1rem 0rem;
+  font-family: reckless;
+  font-weight: 500;
+}
+.pg-2 .desc h5 {
+  font-family: figtree;
+  font-weight: 500;
+}
+.pg-2 .desc p {
+  font-family: figtree;
+  font-weight: 500;
+  padding: 0.6rem 0rem;
+  opacity: 0.7;
+}
+.pg-2 .btn {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  padding: 0.7rem 3rem;
+  border: 0.1rem solid #000;
+  background-color: #2a2857;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 1.4rem;
+}
+.line {
+  margin-top: 5rem;
+  width: 100%;
+  height: 0.1rem;
+  background-color: #000;
+}
+.pg-3 {
+  padding: 1rem;
+}
+.pg-3 .dis {
+  background-color: #ec9e38;
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid #201c1a;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  transform: rotate(-2.0003deg);
+  letter-spacing: -0.14rem;
+  margin-top: 10vh;
+}
+.pg-3 h2 {
+  padding-top: 2rem;
+  font-family: recless;
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+.pg-3 .div {
+  width: 100%;
+  height: 15vh;
+  border: 0.1rem solid #000;
+  border-radius: 1rem;
+  margin-top: 3rem;
+}
+.pg-3 h5 {
+  text-transform: uppercase;
+  font-family: figtree;
+  padding: 2rem 0rem;
+  font-weight: 600;
+}
+.pg-3 .btns button {
+  padding: 0.8rem 1.2rem;
+  border-radius: 1rem;
+  border: 0.0625rem solid #201c1a;
+  background-color: #dce8f7;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.pg-4 {
+  width: 100%;
+  height: 120vh;
+  background-image: url(https://www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp?v=1771592855&width=1600);
+  position: relative;
+}
+.pg-4 .ktl {
+  width: 40vw;
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+}
+.pg-4 .our {
+  background-color: #4a92eb;
+
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid #201c1a;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  transform: rotate(-2.0003deg);
+  position: absolute;
+  right: 5rem;
+  top: 10rem;
+}
+.pg-4 h1 {
+  padding-top: 90%;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 900;
+  text-align: center;
+  font-family: reckless;
+}
+.pg-4 p {
+  margin-top: 10%;
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.pg-4 .btn {
+  margin-left: 28%;
+  margin-top: 7%;
+  padding: 0.8rem 3rem;
+  border: 0.1rem solid #000;
+  border-radius: 3rem;
+  font-size: 1.1rem;
+}
+.pg-5 {
+  width: 100%;
+  padding: 1rem 1rem;
+}
+.pg-5 .btn {
+  background-color: #ec9e38;
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid #201c1a;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  transform: rotate(-2.0003deg);
+
+  margin-top: 10vh;
+}
+.pg-5 h3 {
+  padding: 2rem 0rem;
+  font-size: 2rem;
+  font-family: reckless;
+}
+.pg-5 .cards {
+  display: flex;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Forces the scroll to snap cleanly to cards */
+  width: 100%; /* Fits your parent width */
+  gap: 1rem;
+}
+.pg-5 .card {
+  position: relative;
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  overflow: hidden;
+  width: 2rem;
+  height: 60vh;
+  background-color: #e07715;
+  text-align: center;
+  font-family: reckless;
+  padding: 0rem 1rem;
+  border-radius: 1rem;
+  border: 0.1rem solid #000;
+}
+.pg-5 .card .text {
+  padding: 4rem 0rem;
+}
+.pg-5 .card .text h4 {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+.pg-5 .card .box {
+  position: absolute;
+  bottom: 5%;
+  height: 20vh;
+  width: 90%;
+
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pg-5 .cards .card:nth-child(1) {
+  background-color: #f5af8a;
+}
+.pg-5 .cards .card:nth-child(1) .box {
+  background-color: #eb6e44;
+}
+.pg-5 .cards .card:nth-child(2) {
+  background-color: #aade73;
+}
+.pg-5 .cards .card:nth-child(2) .box {
+  background-color: #74bd26;
+}
+
+.pg-5 .cards .card:nth-child(3) {
+  background-color: #ffd166;
+}
+.pg-5 .cards .card:nth-child(3) .box {
+  background-color: #ffb700;
+}
+.pg-5 .cards .card:nth-child(4) {
+  background-color: #ace673;
+}
+.pg-5 .cards .card:nth-child(4) .box {
+  background-color: #8abf45;
+}
+.pg-5 .card .box img {
+  width: 30%;
+}
+.pg-5 .card .box h5 {
+  width: 30%;
+  font-size: 1rem;
+}
+.pg-5 .card .box .shop {
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  border: 0.1rem solid #000;
+}
+#coffee-era {
+  width: 100%;
+  margin-top: 4rem;
+}
+#coffee-img img {
+  width: 100vw;
+  display: block;
+}
+#coffee-text {
+  background-color: #2a2857;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#coffee-text .content {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #fff;
+}
+#coffee-text span {
+  font-size: 2.3rem;
+}
+#coffee-text p {
+  padding: 2rem 0rem;
+  font-size: 1.3rem;
+}
+#coffee-text button {
+  padding: 1rem 6rem;
+  border: 0.1rem solid #000;
+  font-size: 1.2rem;
+  border-radius: 4rem;
+}
+#chai {
+  width: 98.9vw;
+
+  background-color: #a86b2a;
+  position: relative;
+  padding: 1.5rem;
+}
+#chai img {
+  width: 6rem;
+  position: absolute;
+  right: 5%;
+  top: -5%;
+  z-index: 1;
+}
+#chai span {
+  background-color: #ffcb96;
+  padding: 0.5rem 1rem;
+  font-family: Midnight-semi;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  color: #201c1a;
+  transform: rotate(-2deg);
+  font-size: 1rem;
+  font-weight: 900;
+  position: absolute;
+  top: -7%;
+  left: 27%;
+}
+#chai h1 {
+  color: #ffffff;
+  font-size: 2.7rem;
+  text-align: center;
+  line-height: 1;
+  font-weight: 700;
+  font-family: roboto;
+  padding-top: 30%;
+}
+#chai h5 {
+  color: #fff;
+  text-align: center;
+  font-family: roboto;
+  font-size: 0.8rem;
+  padding: 2rem 0rem;
+}
+#chai .content {
+  margin-top: 40%;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #ffcb96;
+  font-family: reckless;
+}
+#chai .content .img {
+  width: 20rem;
+  position: absolute;
+  left: -30%;
+  top: -20%;
+  height: 18rem;
+}
+#chai .content h2 {
+  padding-top: 80%;
+  font-size: 3rem;
+  width: 12rem;
+  text-align: center;
+  margin-left: 2rem;
+}
+#chai .content p {
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+}
+#chai .content .now {
+  padding: 1rem 4rem;
+  margin-left: 2rem;
+  border-radius: 3rem;
+  margin-top: 3rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .pg-1 {
+    background-image: url(https://www.twoleavestea.com/cdn/shop/files/AlpineBerry.webp?v=1774284236&width=720);
+  }
+  .pg-1 .mob-icon {
+    display: none;
+  }
+  .pg-1 .cart-icon .right {
+    display: flex;
+  }
+  .pg-1 .left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 0.7rem;
+    font-family: reckless;
+    font-weight: 300;
+  }
+  .pg-1 .left i {
+    font-size: 1.4rem;
+  }
+  .pg-1 .hero {
+    align-items: start;
+  }
+  .pg-1 .hero .content {
+    text-align: start;
+  }
+  .pg-2 .hed {
+    margin-top: 7%;
+  }
+  .pg-2 .hed h1 {
+    margin-left: 20rem;
+    width: 60%;
+    font-size: 2.9rem;
+  }
+  .pg-2 .hed button {
+    margin-left: 40%;
+    font-size: 3rem;
+  }
+  .pg-2 .btn {
+    margin-left: 40vw;
+  }
+  .pg-3 {
+    padding: 1rem 9rem;
+  }
+  .pg-3 .dis {
+    font-size: 2.5rem;
+  }
+  .pg-4 .ktl {
+    width: 15vw;
+    right: 15%;
+    top: -5%;
+  }
+  .pg-4 .our {
+    width: 25rem;
+    position: absolute;
+    font-size: 3rem;
+    left: 30%;
+  }
+  .pg-4 h1 {
+    padding-top: 20%;
+    font-size: 7rem;
+  }
+  .pg-4 p {
+    width: 40vw;
+    margin-left: 30%;
+  }
+  .pg-4 .btn {
+    margin-left: 40%;
+  }
+  .pg-5 {
+    padding: 1rem 4rem;
+  }
+  .pg-5 .btn {
+    font-size: 3rem;
+  }
+  .pg-5 .card {
+    height: 50vh;
+    flex: 0 0 25%;
+  }
+  .pg-5 .card .box {
+    height: 10vh;
+  }
+  .pg-5 .card .box img {
+    width: 10vh;
+  }
+  #coffee-era {
+    display: flex;
+  }
+  #coffee-img img {
+    height: 90vh;
+    width: 50vw;
+    display: block;
+  }
+  #coffee-text {
+    height: 90vh;
+  }
+  #chai {
+    height: 200vh;
+  }
+  #chai img {
+    width: 10rem;
+    top: 2%;
+  }
+  #chai span {
+    font-size: 3rem;
+    top: 10%;
+  }
+  #chai h1 {
+    font-size: 4rem;
+    padding-top: 20%;
+  }
+  #chai h5 {
+    font-size: 2rem;
+  }
+  #chai .content {
+    margin-top: 0%;
+  }
+  #chai .content .img {
+   top: 7%;
+   left: 0%;
+   width: 40%;
+   height: 40rem;
+  }
+ 
+ 
+}
